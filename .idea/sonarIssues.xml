@@ -38,12 +38,32 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/gateway/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/gateway/src/main/java/com/xuyp/spring_cloud/gateway/GatewayApplication.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/gateway/src/main/resources/bootstrap.yml">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/service-1/pom.xml">
           <value>
             <set />
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/service-1/src/main/java/com/xupy/spring_cloud/service1/Service1Application.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/service-1/src/main/java/com/xupy/spring_cloud/service1/controller/ChildController.java">
           <value>
             <set />
           </value>
@@ -59,6 +79,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/service-1/src/main/resources/bootstrap.yml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/service-2/src/main/java/com/xupy/spring_cloud/client1/controller/ParentController.java">
           <value>
             <set />
           </value>
