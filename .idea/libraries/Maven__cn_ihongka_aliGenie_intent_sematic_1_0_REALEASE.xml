@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: cn.ihongka:aliGenie-intent-sematic:1.0-REALEASE">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/cn/ihongka/aliGenie-intent-sematic/1.0-REALEASE/aliGenie-intent-sematic-1.0-REALEASE.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/cn/ihongka/aliGenie-intent-sematic/1.0-REALEASE/aliGenie-intent-sematic-1.0-REALEASE-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/cn/ihongka/aliGenie-intent-sematic/1.0-REALEASE/aliGenie-intent-sematic-1.0-REALEASE-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

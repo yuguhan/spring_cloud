@@ -6,7 +6,6 @@ import reactor.core.publisher.Mono;
 
 @RequestMapping(value = "/api/child")
 public class ChildController {
-
     @PostMapping("/getName")
     public Mono<String> getName(){
         return Mono.just("child");

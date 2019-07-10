@@ -9,9 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.xupy.spring_cloud</groupId>
-    <artifactId>client-1</artifactId>
+    <artifactId>service-2</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>client-1</name>
+    <packaging>jar</packaging>
     <description>Demo project for Spring Boot</description>
 
     <properties>
