@@ -30,6 +30,11 @@
             <version>1.0-REALEASE</version>
         </dependency>
         <dependency>
+            <groupId>cn.ihongka</groupId>
+            <artifactId>hongka-taobao-sdk</artifactId>
+            <version>1.0-RELEASE</version>
+        </dependency>
+        <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>1.18.8</version>

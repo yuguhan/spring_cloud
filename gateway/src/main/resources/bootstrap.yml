@@ -15,6 +15,14 @@ spring:
 
     gateway:
       routes:
+      - id: parent_route
+        uri: lb://service-2
+        predicates:
+          - Path=/api/parent/**
 
+      - id: child_route
+        uri: lb://service-1
+        predicates:
+          - Path=/api/child/**
 
 ---

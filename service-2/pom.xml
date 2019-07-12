@@ -11,7 +11,7 @@
     <groupId>com.xupy.spring_cloud</groupId>
     <artifactId>service-2</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>client-1</name>
+    <name>service-2</name>
     <packaging>jar</packaging>
     <description>Demo project for Spring Boot</description>
 
