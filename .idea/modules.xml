@@ -5,7 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/gateway/gateway.iml" filepath="$PROJECT_DIR$/gateway/gateway.iml" />
       <module fileurl="file://$PROJECT_DIR$/service-1/service-1.iml" filepath="$PROJECT_DIR$/service-1/service-1.iml" />
       <module fileurl="file://$PROJECT_DIR$/service-2/service-2.iml" filepath="$PROJECT_DIR$/service-2/service-2.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/spring_cloud.iml" filepath="$PROJECT_DIR$/.idea/spring_cloud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_cloud.iml" filepath="$PROJECT_DIR$/spring_cloud.iml" />
     </modules>
   </component>
 </project>
