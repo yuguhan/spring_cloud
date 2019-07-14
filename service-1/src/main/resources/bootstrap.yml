@@ -3,6 +3,16 @@ spring:
     name: service-1
   profiles:
     active: dev
+  sleuth:
+    web:
+      client:
+        enabled: true
+    sampler:
+      probability: 1.0
+  zipkin:
+    base-url: http://127.0.0.1:9411
+    sender:
+      type: web
 ---
 spring:
   profiles: dev

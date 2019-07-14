@@ -3,6 +3,16 @@ spring:
     name: gateway
   profiles:
     active: dev
+  zipkin:
+    base-url: http://127.0.0.1:9411
+    sender:
+      type: web
+  sleuth:
+    web:
+      client:
+        enabled: true
+    sampler:
+      probability: 1.0
 ---
 spring:
   profiles: dev
@@ -24,5 +34,10 @@ spring:
         uri: lb://service-1
         predicates:
           - Path=/api/child/**
+
+      - id: child_route
+        uri: lb://service-2
+        predicates:
+          - Path=/sayHello/**
 
 ---

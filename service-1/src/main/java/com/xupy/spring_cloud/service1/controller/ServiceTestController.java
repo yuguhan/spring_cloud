@@ -19,11 +19,13 @@ public class ServiceTestController {
         HttpHeaders httpHeaders = request.getHeaders();
         StringBuilder sb = new StringBuilder();
         List<String> from = httpHeaders.get("from");
+
         if (!CollectionUtils.isEmpty(from)) {
             sb.append(from.get(0));
         }
         return mono.map(name ->
                 sb.append("，来了！").append("你好").append(name).toString());
+//        return Mono.error(new RuntimeException());
     }
 
     @GetMapping("/aligenie/705fc1d67ee7b0ad2a52828285ec34c8.txt")
