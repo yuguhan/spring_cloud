@@ -11,7 +11,6 @@ public class ContentServieImpl implements ContentService {
     private String appKey = "";
     private String secret = "";
     private long skillId = 0L;
-
     public void execute() {
         TaobaoClient client = new DefaultTaobaoClient(url, appKey, secret);
 
