@@ -37,5 +37,11 @@ public class ServiceTestController {
     public Mono<String> sign2(){
         return Mono.just("Jfc4Z4Ur15JwUBuvUQD5wg7Nu8+l+HscqYlfofbyJdY2cvtjfyBA1KTNBHJaHt4S");
     }
+    @GetMapping("/aligenie/f3314823b3e76de2f99ab14830e4e2e1.txt")
+    public Mono<String> sign3(){
+        return Mono.just("Jfc4Z4Ur15JwUBuvUQD5wg7Nu8+l+HscqYlfofbyJdacn57fJncv6676oVEw5ZjP");
+    }
+
+
 
 }

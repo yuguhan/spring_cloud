@@ -10,6 +10,8 @@ import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Component;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.Map;
 import java.util.stream.Collectors;
 @Component
@@ -31,8 +33,41 @@ public class StoryHandleImpl implements StoryHandle {
            return whatStory();
         } else if ("红卡讲故事".equals(taskQuery.getIntentName())){
            return baseQuery(paramMap);
+       } else if ("红卡课程表".equals(taskQuery.getIntentName())) {
+           return kebiaoQuery(paramMap);
+       }
+        return defaultResult();
+    }
+
+    private TaskResult kebiaoQuery(Map<String, String> paramMap) {
+        TaskResult result = new TaskResult();
+        try {
+            String time = paramMap.get("time");
+            LocalDate localDate = null;
+            if (StringUtils.isBlank(time)) {
+                return defaultResult();
+            }
+            if ("今天".equals(time)) {
+                localDate = LocalDate.now();
+            } else if ("明天".equals(time)) {
+                localDate = LocalDate.now().plusDays(1);
+            } else if ("昨天".equals(time)) {
+                localDate = LocalDate.now().minusDays(1);
+            }
+            StringBuilder sb = new StringBuilder();
+            sb.append(localDate.getMonth())
+                    .append("月")
+                    .append(localDate.getDayOfMonth())
+                    .append("日")
+                    .append("的课程为：数学，语文，英语，语文，体育");
+            result.setReply(sb.toString());
+            result.setExecuteCode(ExecuteCode.SUCCESS);
+            result.setResultType(ResultType.RESULT);
+        } catch (Exception e) {
+            log.info("query exception", e);
+            result.setExecuteCode(ExecuteCode.EXECUTE_ERROR);
         }
-        return null;
+        return result;
     }
 
     private TaskResult baseQuery(Map<String, String> paramMap) {
@@ -68,6 +103,20 @@ public class StoryHandleImpl implements StoryHandle {
         TaskResult result = new TaskResult();
         try {
             result.setReply("需要怪蜀黍给你讲什么故事 ？");
+            result.setExecuteCode(ExecuteCode.SUCCESS);
+            result.setResultType(ResultType.RESULT);
+        } catch (Exception e) {
+            log.info("query exception", e);
+            result.setExecuteCode(ExecuteCode.EXECUTE_ERROR);
+        }
+
+        return result;
+    }
+
+    private TaskResult defaultResult() {
+        TaskResult result = new TaskResult();
+        try {
+            result.setReply("需要怪蜀黍做什么呢？");
             result.setExecuteCode(ExecuteCode.SUCCESS);
             result.setResultType(ResultType.RESULT);
         } catch (Exception e) {
