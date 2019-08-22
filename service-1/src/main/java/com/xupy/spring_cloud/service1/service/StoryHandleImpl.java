@@ -55,11 +55,16 @@ public class StoryHandleImpl implements StoryHandle {
                 localDate = LocalDate.now().minusDays(1);
             }
             StringBuilder sb = new StringBuilder();
-            sb.append(localDate.getMonth())
-                    .append("月")
-                    .append(localDate.getDayOfMonth())
-                    .append("日")
-                    .append("的课程为：数学，语文，英语，语文，体育");
+            if (localDate != null) {
+                sb.append(localDate.getMonth())
+                        .append("月")
+                        .append(localDate.getDayOfMonth())
+                        .append("日")
+                        .append("的课程为：数学，语文，英语，语文，体育");
+            }else {
+                sb.append("没听清时间哦~");
+            }
+
             result.setReply(sb.toString());
             result.setExecuteCode(ExecuteCode.SUCCESS);
             result.setResultType(ResultType.RESULT);

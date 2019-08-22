@@ -12,6 +12,7 @@
         <module>service-2</module>
         <module>service-1</module>
         <module>gateway</module>
+        <module>common</module>
     </modules>
     <dependencies>
         <dependency>
