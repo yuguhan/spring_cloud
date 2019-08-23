@@ -21,6 +21,7 @@
     </properties>
 
     <dependencies>
+
         <dependency>
             <groupId>cn.ihongka</groupId>
             <artifactId>aliGenie-intent-sematic</artifactId>
@@ -60,8 +61,8 @@
 <!--            <artifactId>spring-cloud-starter-zipkin</artifactId>-->
 <!--        </dependency>-->
         <dependency>
-            <groupId>com.xuyp</groupId>
-            <artifactId>common</artifactId>
+            <groupId>com.xuyp.common</groupId>
+            <artifactId>springcloud</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
         <dependency>
